@@ -1,0 +1,204 @@
+:root {
+    /* Colors */
+    --body-bg-color: #00a3c0;
+    --main-bg-color: #ebeae9;
+    --bg-gray: #5a5a5ac5;
+    --white-color: #fff;
+    --black-color: #000;
+
+    /* Fonts */
+    --main-font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap");
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    margin: 1rem;
+    overflow-x: hidden;
+}
+
+html {
+    font-family: var(--main-font-family);
+}
+
+.wrapper-container {
+    background-color: var(--main-bg-color);
+}
+
+/* Nav Start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+nav ul {
+    margin-left: 5rem;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+nav .burger {
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+nav .burger span {
+    height: 4px;
+    border: 2px solid var(--black-color);
+    margin: 4px;
+    background-color: var(--black-color);
+}
+/* Nav End */
+
+/* Header Start */
+header {
+    margin: 6rem;
+}
+
+.main-heading {
+    width: 50%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.primary-heading {
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+.bg-gray {
+    background-color: var(--bg-gray);
+    color: var(--white-color);
+    padding: 2px 10px;
+    font-weight: bold;
+}
+/* Header End */
+
+/* Main Start */
+main {
+    margin: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
+
+main .img {
+    width: 40%;
+    margin: 10px;
+}
+/* Main End */
+
+/* Section:Types of Art Start */
+.types-art {
+    margin-top: 10rem;
+    margin-left: 5rem;
+}
+
+.types-art .primary-heading {
+    margin-bottom: 10rem;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.types-art .item h3 {
+    font-size: 2rem;
+    color: var(--bg-gray);
+    text-transform: uppercase;
+}
+
+.types-art img {
+    width: 400px;
+    height: 500px;
+    margin: 50px;
+}
+/* Section:Types of Art End */
+
+/* Footer Start */
+footer {
+    margin-top: 10rem;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white-color);
+    background-color: var(--body-bg-color);
+}
+
+footer .logo-container h2 {
+    font-size: 4rem;
+    font-family: var(--main-font-family);
+    margin-bottom: 20px;
+}
+
+footer .logo-container p {
+    max-width: 400px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+footer .about-company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .about-company .container {
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.about-company .container h2 {
+    margin-bottom: 50px;
+}
+
+.about-company .container p {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+/* Footer End */
+
+/* Responsiveness */
+@media screen and (max-width: 740px) {
+    header .main-heading, .types-art .main-heading {
+        width: 100%;
+    }
+
+    header .primary-heading, .types-art .primary-heading {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .types-art img {
+        margin: 0;
+    }
+}
